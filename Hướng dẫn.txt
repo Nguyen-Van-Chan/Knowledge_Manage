@@ -1,0 +1,12 @@
+# Cấu hình yêu cầu: Visual Studio 2019, .NET 5.0, sql server 18
+# Hướng dẫn sử dụng:
+- Mã nguồn: folder KnowledgeManage
+- SQL: folder Data, file AddDataQuery.sql
+- Srip: scripData.sql
+- Chạy source:
++ Config tại appsettings.json, đổi link sql Server
++ Xoá hết các file trong folder Migrations
++ Click: Tool >> NuGet Package Manager >> Package Manager Console
++ Gõ:
+add-migration CreateInitialDB
+update-database
